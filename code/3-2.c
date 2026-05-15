@@ -20,10 +20,10 @@ int main(void) {
     int arr[] = {5, 2, 8, 1, 9, 3};
     int size = 6;
 
-    qsort(arr, size, sizeof(const int *), cmp_asc);
+    qsort(arr, size, sizeof(int), cmp_asc);
     print_arr(arr, size);
 
-    qsort(arr, size, sizeof(const int *), cmd_dsec);
+    qsort(arr, size, sizeof(int), cmd_dsec);
     print_arr(arr, size);
 
     return 0;
